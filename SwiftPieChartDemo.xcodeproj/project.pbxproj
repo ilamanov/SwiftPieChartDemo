@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5E68334B263512730017DAC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E68334A263512730017DAC9 /* Preview Assets.xcassets */; };
 		5E683356263512730017DAC9 /* SwiftPieChartDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E683355263512730017DAC9 /* SwiftPieChartDemoTests.swift */; };
 		5E683361263512730017DAC9 /* SwiftPieChartDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E683360263512730017DAC9 /* SwiftPieChartDemoUITests.swift */; };
+		5E683373263513D10017DAC9 /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 5E683372263513D10017DAC9 /* SwiftPieChart */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E683373263513D10017DAC9 /* SwiftPieChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = SwiftPieChartDemo;
+			packageProductDependencies = (
+				5E683372263513D10017DAC9 /* SwiftPieChart */,
+			);
 			productName = SwiftPieChartDemo;
 			productReference = 5E683340263512700017DAC9 /* SwiftPieChartDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 5E683337263512700017DAC9;
+			packageReferences = (
+				5E683371263513D10017DAC9 /* XCRemoteSwiftPackageReference "SwiftPieChart" */,
+			);
 			productRefGroup = 5E683341263512700017DAC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -574,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E683371263513D10017DAC9 /* XCRemoteSwiftPackageReference "SwiftPieChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ilamanov/SwiftPieChart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E683372263513D10017DAC9 /* SwiftPieChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E683371263513D10017DAC9 /* XCRemoteSwiftPackageReference "SwiftPieChart" */;
+			productName = SwiftPieChart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E683338263512700017DAC9 /* Project object */;
 }
